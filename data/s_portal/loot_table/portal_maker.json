@@ -1,0 +1,100 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "quartz"
+        }
+      ],
+      "functions": [
+        {
+          "function": "set_name",
+          "target": "item_name",
+          "name": {
+            "text": "Portal Maker",
+            "color": "yellow"
+          }
+        },
+        {
+          "function": "set_lore",
+          "lore": [
+            {
+              "text": "<",
+              "extra": [
+                {
+                  "text": "Right Click",
+                  "extra": [
+                    {
+                      "text": ">",
+                      "color": "gray"
+                    }
+                  ],
+                  "color": "aqua"
+                }
+              ],
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "text": " Place and remove portals",
+              "color": "dark_aqua",
+              "italic": false
+            }
+          ],
+          "mode": "replace_all"
+        },
+        {
+          "function": "set_components",
+          "components": {
+            "max_stack_size": 1,
+            "custom_data": {
+              "S_Item": true
+            },
+            "tooltip_display": {
+              "hidden_components": [
+                "enchantments"
+              ]
+            },
+            "enchantment_glint_override": false,
+            "consumable": {
+              "consume_seconds": 0,
+              "sound": "intentionally_empty",
+              "has_consume_particles": false
+            },
+            "use_cooldown": {
+              "seconds": 0.5,
+              "cooldown_group": "s_item"
+            },
+            "use_remainder": {
+              "id": "quartz",
+              "count": 1,
+              "components": {
+                "custom_data": "{\"Used\":1b,\"Loottable\":\"s_portal:portal_maker\"}",
+                "enchantments": {
+                  "s_portal:remainder": 1
+                },
+                "enchantment_glint_override": false,
+                "item_name": {
+                  "text": "Portal Maker",
+                  "color": "yellow"
+                },
+                "lore": [
+                  {
+                    "text": "このアイテムが残っているなら、",
+                    "italic": false
+                  },
+                  {
+                    "text": "バグが起きたということ。",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

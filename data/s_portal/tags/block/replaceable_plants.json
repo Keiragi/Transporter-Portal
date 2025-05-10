@@ -1,0 +1,25 @@
+{
+  "values": [
+    "short_grass",
+    "fern",
+    "dead_bush",
+    "vine",
+    "glow_lichen",
+    "sunflower",
+    "lilac",
+    "rose_bush",
+    "peony",
+    "tall_grass",
+    "large_fern",
+    "hanging_roots",
+    "warped_roots",
+    "crimson_roots",
+    "mangrove_roots",
+    "warped_fungus",
+    "crimson_fungus",
+    "potted_warped_fungus",
+    "potted_crimson_fungus",
+    "nether_sprouts",
+    "#saplings"
+  ]
+}

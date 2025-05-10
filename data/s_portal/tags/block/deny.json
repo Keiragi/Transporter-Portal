@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#fences",
+    "#fence_gates",
+    "#anvil",
+    "chest",
+    "trapped_chest",
+    "ender_chest"
+  ]
+}
