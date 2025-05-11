@@ -2,7 +2,7 @@
 
 # リセット
   advancement revoke @s only s_portal:used
-  title @s actionbar ""
+  #title @s actionbar ""
 
 # ブロック操作範囲をそのまま距離に反映
   execute store result score @s S_Portal.Measure run attribute @s block_interaction_range get 10
