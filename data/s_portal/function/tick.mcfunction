@@ -4,6 +4,6 @@ execute at @e[type=interaction,tag=S_Portal] positioned ~ ~1 ~ run particle clou
 
 scoreboard players remove @e[type=interaction,tag=S_Portal,scores={S_Portal.PortalCooldown=1..}] S_Portal.PortalCooldown 1
 
-execute as @a at @s positioned ~ ~-1 ~ if entity @e[type=interaction,tag=S_Portal,distance=..0.5] \
+execute as @a at @s positioned ~ ~-1 ~ if entity @e[type=interaction,tag=S_Portal,tag=S_Connected,distance=..0.5] \
 if predicate s_portal:sneak if score @s S_Portal.PortalCooldown matches 1.. \
 run function s_portal:teleport/
