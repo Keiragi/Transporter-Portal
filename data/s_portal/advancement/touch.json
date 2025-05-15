@@ -1,11 +1,11 @@
 {
   "criteria": {
-    " ": {
+    "": {
       "trigger": "player_interacted_with_entity",
       "conditions": {
         "entity": {
           "type": "interaction",
-          "nbt": "{Tags:[S_Portal]}"
+          "nbt": "{\"Tags\":[\"S_Portal_Maker\"]}"
         }
       }
     }
