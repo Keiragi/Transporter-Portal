@@ -1,5 +1,0 @@
-playsound entity.blaze.hurt player @s ~ ~ ~ 0.5 2 1
-summon armor_stand ~ ~-0.5 ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["S_Portal"],Passengers:[{id:"shulker",Tags:["S_Portal"],NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,AttachFace:0b,Color:15b,active_effects:[{id:"invisibility",amplifier:0,duration:-1,show_particles:0b},{id:"resistance",amplifier:4,duration:-1,show_particles:0b}]},{id:"block_display",Tags:["S_Portal"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5005f,-0.0005f,-0.5005f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"nether_quartz_ore"},brightness:{sky:15,block:1}}]}
-summon interaction ~ ~-0.5005 ~ {width:1.001f,height:1.001f,Tags:["S_Portal"]}
-scoreboard players set @e[type=interaction,tag=S_Portal] S_Portal.PortalCooldown 10
-summon ender_pearl ~ ~ ~ {NoGravity:1b,Owner:[I;1551468513,1153779665,-1414995586,1728897062],Tags:["S_Portal"]}
