@@ -1,7 +1,16 @@
 {
   "criteria": {
-    "": {
+    "interaction": {
       "trigger": "player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "interaction",
+          "nbt": "{\"Tags\":[\"S_Portal_Maker\"]}"
+        }
+      }
+    },
+    "attack": {
+      "trigger": "player_hurt_entity",
       "conditions": {
         "entity": {
           "type": "interaction",
@@ -10,6 +19,12 @@
       }
     }
   },
+  "requirements": [
+    [
+      "interaction",
+      "attack"
+    ]
+  ],
   "rewards": {
     "function": "s_portal:portal/touch/"
   }

@@ -1,6 +1,7 @@
 ## ポータルクリック
-  advancement revoke @s only s_portal:touch
-  execute unless score @n[type=interaction,tag=S_Portal_Maker] S_Portal.PortalCooldown matches 0 run return fail
+  execute if entity @s[advancements={s_portal:touch={interaction=true}}] run function s_portal:portal/touch/interaction
+  execute if entity @s[advancements={s_portal:touch={attack=true}}] \
+  as @e[limit=1,type=interaction,tag=S_Portal_Maker,nbt={attack:{}}] run function s_portal:portal/touch/attack
 
-function s_portal:portal/place/remove
-tag @s remove S_Placed
+# 初期化
+  advancement revoke @s only s_portal:touch
