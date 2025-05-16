@@ -1,10 +1,14 @@
 {
   "values": [
+    "end_stone",
     "#fences",
     "#fence_gates",
     "#anvil",
     "chest",
     "trapped_chest",
-    "ender_chest"
+    "ender_chest",
+    "furnace",
+    "blast_furnace",
+    "smoker"
   ]
 }
