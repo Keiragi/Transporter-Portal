@@ -1,2 +1,2 @@
 kill @e[tag=S_Portal_Maker]
-tellraw @a "すべてのポータルが削除されました"
+tellraw @s "すべてのポータルが削除されました"
