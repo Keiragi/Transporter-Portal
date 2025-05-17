@@ -6,4 +6,4 @@
   run return run function s_portal:portal/place/
 
 # 無ければ繰り返す
-  execute if entity @s[scores={S_Portal.Measure=0..}] positioned ^ ^ ^0.1 run function s_portal:item/loop
+  execute if entity @s["scores"={S_Portal.Measure=0..}] positioned ^ ^ ^0.1 run function s_portal:item/loop

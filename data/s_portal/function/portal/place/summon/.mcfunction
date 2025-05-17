@@ -7,7 +7,7 @@
 
 # チャンクローダー
   summon ender_pearl ~ ~ ~ {"NoGravity":1b,"Tags":["S_Portal_Maker","S_Portal.init"]}
-  data modify entity @e[type=ender_pearl,limit=1,tag=S_Portal.init] Owner set from entity @s UUID
+  data modify entity @e["type"=ender_pearl,"limit"=1,"tag"=S_Portal.init] Owner set from entity @s UUID
 
 # initとNameを置き換え
-  execute as @e[tag=S_Portal.init] run data modify entity @s Tags[1] set from storage minecraft: "S_Portal_Maker"."Name"
+  execute as @e["tag"=S_Portal.init] run data modify entity @s Tags[1] set from storage minecraft: "S_Portal_Maker"."Name"

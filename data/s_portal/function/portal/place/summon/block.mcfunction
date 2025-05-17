@@ -4,4 +4,4 @@
 
 # シュルカー騎乗
   summon shulker ~ -100 ~ {"Tags":["S_Portal_Maker","S_Portal.init"],"DeathLootTable":"minecraft:empty","DeathTime":20,"Silent":1b,"Invulnerable":1b,"NoAI":1b,"Color":15b,"active_effects":[{"id":"invisibility","amplifier":0,"duration":-1,"show_particles":0b},{"id":"resistance","amplifier":4,"duration":-1,"show_particles":0b}]}
-  ride @e[type=shulker,limit=1,tag=S_Portal.init] mount @s
+  ride @e["type"=shulker,"limit"=1,"tag"=S_Portal.init] mount @s
