@@ -1,4 +1,4 @@
-execute at @e[type=interaction,tag=S_Portal_Maker,tag=!S_Portal.Connected] positioned ~ ~1 ~ run particle smoke ~ ~1 ~ 0.25 0.25 0.25 0 1 force @a[distance=1..]
+execute at @e[type=interaction,tag=S_Portal_Maker,tag=!S_Portal.Connected] positioned ~ ~1 ~ run particle smoke ~ ~1 ~ 0.25 0.5 0.25 0 1 force @a[distance=1..]
 execute at @e[type=interaction,tag=S_Portal_Maker,tag=!S_Portal.Connected] positioned ~ ~1 ~ run particle smoke ~ ~ ~ 0.25 0.1 0.25 0 1 normal @a[distance=..1]
 execute at @e[type=interaction,tag=S_Portal_Maker,tag=S_Portal.Connected] positioned ~ ~1 ~ run particle cloud ~ ~1 ~ 0.3 0.5 0.3 0 1 force @a[distance=1..]
 execute at @e[type=interaction,tag=S_Portal_Maker,tag=S_Portal.Connected] positioned ~ ~1 ~ run particle cloud ~ ~0.5 ~ 0.3 0.1 0.3 0 1 normal @a[distance=..1]
@@ -7,4 +7,4 @@ scoreboard players remove @e[type=interaction,tag=S_Portal_Maker,scores={S_Porta
 
 execute as @a at @s positioned ~ ~-1 ~ if entity @e[type=interaction,tag=S_Portal_Maker,tag=S_Portal.Connected,distance=..0.5] \
 if predicate s_portal:sneak if score @s S_Portal.PortalCooldown matches 1.. \
-run function s_portal:teleport/
+run function s_portal:teleport/ with entity @e[type=interaction,tag=S_Portal_Maker,tag=S_Portal.Connected,distance=..0.5,limit=1] "data"."S_Portal_Maker"
