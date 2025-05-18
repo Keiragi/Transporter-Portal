@@ -1,8 +1,8 @@
 ## ポータル設置
   # エラー処理
     execute if block ~ ~ ~ #s_portal:deny run return run function s_portal:portal/error/deny
-    execute unless block ~ ~1 ~ #air run return run function s_portal:portal/error/not_enough
-    execute unless block ~ ~2 ~ #air run return run function s_portal:portal/error/not_enough
+    execute unless block ~ ~1 ~ #s_portal:enable run return run function s_portal:portal/error/not_enough
+    execute unless block ~ ~2 ~ #s_portal:enable run return run function s_portal:portal/error/not_enough
 
   # データ取得
     function s_portal:portal/place/summon/get_name
