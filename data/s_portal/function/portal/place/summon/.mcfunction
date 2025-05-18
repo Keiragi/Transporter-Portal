@@ -6,7 +6,7 @@
   execute positioned ~ ~-0.5005 ~ summon interaction run function s_portal:portal/place/summon/interaction
 
 # チャンクローダー
-  summon ender_pearl ~ ~ ~ {"NoGravity":1b,"Tags":["S_Portal_Maker","S_Portal.init"]}
+  summon ender_pearl ~ ~-0.2 ~ {"NoGravity":1b,"Tags":["S_Portal_Maker","S_Portal.init"]}
   data modify entity @e["type"=ender_pearl,"limit"=1,"tag"=S_Portal.init] Owner set from entity @s UUID
 
 # initとNameを置き換え
