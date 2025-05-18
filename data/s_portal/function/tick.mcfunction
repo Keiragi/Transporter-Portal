@@ -5,6 +5,7 @@ execute at @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=S_Portal.Connected] 
 
 scoreboard players remove @e["type"=interaction,"tag"=S_Portal_Maker,"scores"={S_Portal.PortalCooldown=1..}] S_Portal.PortalCooldown 1
 
-execute as @a at @s positioned ~ ~-1 ~ if entity @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=S_Portal.Connected,"distance"=..0.5] \
-if predicate s_portal:sneak if score @s S_Portal.PortalCooldown matches 1.. \
-run function s_portal:teleport/ with entity @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=S_Portal.Connected,"distance"=..0.5,"limit"=1] "data"."S_Portal_Maker"
+# スニーク時 下にいるinteractionの場所で実行
+  execute as @a if predicate s_portal:sneak if score @s S_Portal.PortalCooldown matches 1.. at @s \
+  positioned ~ ~-1 ~ if entity @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=S_Portal.Connected,"distance"=..0.5,"limit"=1] \
+  run function s_portal:teleport/ with entity @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=S_Portal.Connected,"distance"=..0.5,"limit"=1] "data"."S_Portal_Maker"
