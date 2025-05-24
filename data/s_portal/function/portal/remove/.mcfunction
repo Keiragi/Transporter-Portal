@@ -1,6 +1,9 @@
-# 通知
-  title @s actionbar ["ポータルが",{"text":"除去","color":"light_purple","bold":true},"されました"]
-  $execute as @e["type"=shulker,"tag"=$(Name)] at @s run function s_portal:portal/remove/shulker
-  playsound entity.ghast.scream block @s ~ ~ ~ 0.5
+## 通知
+  # 自分にだけ
+    $execute as $(Name) at @s run function s_portal:portal/remove/player
 
-$kill @e["tag"=$(Name)]
+  # 全体で一度だけ
+    $execute as @e["type"=shulker,"tag"=S_Portal_Maker,"tag"=$(Name)] at @s run function s_portal:portal/remove/shulker
+
+  # 全体消去
+    $kill @e["tag"=$(Name)]
