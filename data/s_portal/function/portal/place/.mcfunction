@@ -18,7 +18,7 @@
     function s_portal:portal/place/summon/
 
   # 接続判定
-    execute if data storage minecraft: "S_Portal_Maker"{"Number":1b} run function s_portal:portal/place/connected with storage minecraft: "S_Portal_Maker"
+    execute if data storage minecraft: "S_Portal_Maker"{"Number":1b} at @s run function s_portal:portal/place/connected with storage minecraft: "S_Portal_Maker"
 
   # 初期化
     data remove storage minecraft: "S_Portal_Maker"
