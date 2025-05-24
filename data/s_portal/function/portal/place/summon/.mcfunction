@@ -1,5 +1,5 @@
 # 設置演出
-  playsound entity.blaze.hurt player @s ~ ~ ~ 0.5 2 1
+  playsound entity.blaze.hurt player @a["distance"=..16] ~ ~ ~ 0.5 2 1
 
 # 主要
   execute positioned ~ ~-0.5 ~ summon block_display run function s_portal:portal/place/summon/block
