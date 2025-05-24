@@ -1,2 +1,5 @@
-$execute unless score @e["limit"=1,"type"=interaction,"tag"=S_Portal_Maker,"tag"=$(Name),"nbt"={"interaction":{}}] S_Portal.PortalCooldown matches 0 run return run data remove entity @s interaction
-function s_portal:portal/remove/ with entity @e["limit"=1,"type"=interaction,"tag"=S_Portal_Maker,"nbt"={"interaction":{}}] "data"."S_Portal_Maker"
+# 設置直後なら停止
+  execute unless score @s S_Portal.PortalCooldown matches 0 run return run data remove entity @s interaction
+
+# 消去
+  function s_portal:portal/remove/ with entity @s "data"."S_Portal_Maker"
