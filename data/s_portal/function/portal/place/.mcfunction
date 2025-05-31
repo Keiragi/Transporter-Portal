@@ -1,3 +1,5 @@
+#> s_portal:portal/place/
+
 ## ポータル設置
   # エラー処理
     execute if block ~ ~ ~ #s_portal:deny run return run function s_portal:portal/error/deny

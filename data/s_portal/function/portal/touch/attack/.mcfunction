@@ -1,3 +1,5 @@
+#> s_portal:portal/touch/attack/
+
 # 接続判定
   execute unless entity @s["tag"=S_Portal.Connected] run data modify storage minecraft: "S_Portal_Maker"."Info" merge value {"state":"None","color":"gray"}
   $execute if entity @s["tag"=S_Portal.Connected] as @e["limit"=1,"type"=interaction,"tag"=S_Portal_Maker,"tag"=$(Name),"nbt"=!{"attack":{}}] at @s run function s_portal:portal/touch/attack/dimension

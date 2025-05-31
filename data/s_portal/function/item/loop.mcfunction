@@ -1,3 +1,5 @@
+#> s_portal:item/loop
+
 ## ブロック検知処理
   scoreboard players remove @s S_Portal.Measure 1
 

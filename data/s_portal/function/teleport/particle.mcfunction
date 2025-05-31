@@ -1,3 +1,5 @@
+#> s_portal:teleport/particle
+
 #Function
 # Collection--円
   particle firework ~-0.0 ~0.9 ~0.5 ~-7.45 ~-118.41 ~1000000000.0 0.00000000005 0 force @s

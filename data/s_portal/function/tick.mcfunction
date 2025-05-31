@@ -1,7 +1,11 @@
-execute at @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=!S_Portal.Connected] positioned ~ ~1 ~ run particle smoke ~ ~1 ~ 0.25 0.5 0.25 0 1 force @a["distance"=1..]
-execute at @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=!S_Portal.Connected] positioned ~ ~1 ~ run particle smoke ~ ~0 ~ 0.25 0.1 0.25 0 1 normal @a["distance"=..1]
-execute at @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=S_Portal.Connected] positioned ~ ~1 ~ run particle cloud ~ ~1.0 ~ 0.3 0.5 0.3 0 1 force @a["distance"=1..]
-execute at @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=S_Portal.Connected] positioned ~ ~1 ~ run particle cloud ~ ~0.5 ~ 0.3 0.1 0.3 0 1 normal @a["distance"=..1]
+
+#> s_portal:tick
+
+#
+  execute at @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=!S_Portal.Connected] positioned ~ ~1 ~ run particle smoke ~ ~1 ~ 0.25 0.5 0.25 0 1 force @a["distance"=1..]
+  execute at @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=!S_Portal.Connected] positioned ~ ~1 ~ run particle smoke ~ ~0 ~ 0.25 0.1 0.25 0 1 normal @a["distance"=..1]
+  execute at @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=S_Portal.Connected] positioned ~ ~1 ~ run particle cloud ~ ~1.0 ~ 0.3 0.5 0.3 0 1 force @a["distance"=1..]
+  execute at @e["type"=interaction,"tag"=S_Portal_Maker,"tag"=S_Portal.Connected] positioned ~ ~1 ~ run particle cloud ~ ~0.5 ~ 0.3 0.1 0.3 0 1 normal @a["distance"=..1]
 
 scoreboard players remove @e["type"=interaction,"tag"=S_Portal_Maker,"scores"={S_Portal.PortalCooldown=1..}] S_Portal.PortalCooldown 1
 

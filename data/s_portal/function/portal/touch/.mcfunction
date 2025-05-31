@@ -1,3 +1,5 @@
+#> s_portal:portal/touch/
+
 ## ポータルクリック
   execute if entity @s["advancements"={s_portal:touch={interaction=true}}] \
   as @e["limit"=1,"type"=interaction,"tag"=S_Portal_Maker,"nbt"={"interaction":{}}] \

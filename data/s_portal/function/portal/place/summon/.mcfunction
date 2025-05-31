@@ -1,3 +1,5 @@
+#> s_portal:portal/place/summon/
+
 # 設置演出
   playsound entity.blaze.hurt player @a["distance"=..16] ~ ~ ~ 0.5 2 1
 

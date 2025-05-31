@@ -1,3 +1,5 @@
+#> s_portal:portal/touch/check_air
+
 ## 空間判定処理
   execute unless block ~ ~2 ~ #s_portal:enable run return fail
   execute unless block ~ ~3 ~ #s_portal:enable run return fail

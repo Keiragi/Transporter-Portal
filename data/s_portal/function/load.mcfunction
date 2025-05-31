@@ -1,3 +1,5 @@
+#> s_portal:load
+
 title @a actionbar "Reloaded"
 
 gamerule enderPearlsVanishOnDeath false

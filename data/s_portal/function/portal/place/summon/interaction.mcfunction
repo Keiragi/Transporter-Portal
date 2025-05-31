@@ -1,3 +1,5 @@
+#> s_portal:portal/place/summon/interaction
+
 ##interactionのデータ設定
 # 基礎値
   scoreboard players set @s S_Portal.PortalCooldown 10

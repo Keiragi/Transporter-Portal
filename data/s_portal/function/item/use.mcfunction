@@ -1,3 +1,5 @@
+#> s_portal:item/use
+
 ## PortalMaker使用時
 
 # リセット

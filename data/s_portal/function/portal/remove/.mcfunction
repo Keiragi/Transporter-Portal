@@ -1,3 +1,5 @@
+#> s_portal:portal/remove/
+
 ## 通知
   # 自分にだけ
     $execute as $(Name) at @s run function s_portal:portal/remove/player
