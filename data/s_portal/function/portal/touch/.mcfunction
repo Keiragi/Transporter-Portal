@@ -1,4 +1,4 @@
-#> s_portal:portal/touch/
+## ポータルをクリックしたときの処理
 
 ## ポータルクリック
   execute if entity @s[advancements={s_portal:touch={interaction=true}}] \

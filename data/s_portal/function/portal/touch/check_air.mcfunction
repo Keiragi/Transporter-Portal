@@ -1,4 +1,4 @@
-#> s_portal:portal/touch/check_air
+## ポータル上が空気か判定
 
 ## 空間判定処理
   execute unless block ~ ~2 ~ #s_portal:enable run return fail

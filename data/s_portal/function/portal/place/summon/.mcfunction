@@ -1,4 +1,4 @@
-#> s_portal:portal/place/summon/
+## ポータルエンティティ類を召喚
 
 # 設置演出
   playsound entity.blaze.hurt player @a[distance=..16] ~ ~ ~ 0.5 2 1

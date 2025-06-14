@@ -1,6 +1,4 @@
-#> s_portal:item/use
-
-## PortalMaker使用時
+## 手のデータを取って設置処理を開始
 
 # リセット
   advancement revoke @s only s_portal:used

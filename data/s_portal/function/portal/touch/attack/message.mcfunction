@@ -1,4 +1,4 @@
-#> s_portal:portal/touch/attack/message
+## ポータルの情報を表示
 
 $tellraw @a[limit=1,advancements={s_portal:touch={attack=true}}] ["\
 --------------------\n\

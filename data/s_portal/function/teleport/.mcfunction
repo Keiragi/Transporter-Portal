@@ -1,4 +1,4 @@
-#> s_portal:teleport/
+## 移動処理
 
 # プレイヤーとinteractionに実行中のタグ + クールダウン
   tag @e[type=interaction,tag=S_Portal_Maker,tag=S_Portal.Connected,distance=..0.5,limit=1] add S_Portal.Processing

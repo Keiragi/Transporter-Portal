@@ -1,6 +1,5 @@
-#> s_portal:portal/place/summon/block
+## block_displayのデータ設定
 
-##block_displayのデータ設定
 # 基礎値
   data merge entity @s {Tags:["S_Portal_Maker","S_Portal.init"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5005f,-0.0005f,-0.5005f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"nether_quartz_ore"},brightness:{sky:15,block:0}}
 

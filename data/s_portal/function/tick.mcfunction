@@ -1,4 +1,4 @@
-#> s_portal:tick
+## 毎tick実行
 
 # パーティクル
   execute at @e[type=interaction,tag=S_Portal_Maker,tag=!S_Portal.Connected] positioned ~ ~1 ~ run particle smoke ~ ~1 ~ 0.25 0.5 0.25 0 1 force @a[distance=1..]

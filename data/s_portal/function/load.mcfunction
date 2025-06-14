@@ -1,4 +1,4 @@
-#> s_portal:load
+## loadしたときの処理
 
 title @a actionbar "Reloaded"
 

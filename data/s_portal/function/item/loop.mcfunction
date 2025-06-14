@@ -1,4 +1,4 @@
-#> s_portal:item/loop
+## 視線の先にポータルを設置
 
 ## ブロック検知処理
   scoreboard players remove @s S_Portal.Measure 1

@@ -1,4 +1,4 @@
-#> s_portal:portal/touch/attack/
+## interactionを攻撃したときの処理
 
 # 接続判定
   execute unless entity @s[tag=S_Portal.Connected] run data modify storage minecraft: S_Portal_Maker.Info merge value {"state":"None","color":"gray"}
