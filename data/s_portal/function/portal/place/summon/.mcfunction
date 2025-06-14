@@ -13,4 +13,4 @@
   ride @e[type=ender_pearl,limit=1,tag=S_Portal.init] mount @e[type=block_display,limit=1,tag=S_Portal.init]
 
 # initとNameを置き換え
-  execute as @e[tag=S_Portal.init] run data modify entity @s Tags[1] set from storage shrs: Portal_Maker.Name
+  execute as @e[tag=S_Portal.init] run data modify entity @s Tags[1] set from storage shrs:temp Portal_Maker.Name

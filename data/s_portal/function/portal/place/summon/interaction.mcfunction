@@ -5,4 +5,4 @@
   data merge entity @s {width:1.001f,height:1.001f,Tags:["S_Portal_Maker","S_Portal.init"]}
 
 # IDの設定
-  data modify entity @s data.S_Portal_Maker.Name set from storage shrs: Portal_Maker.Name
+  data modify entity @s data.S_Portal_Maker.Name set from storage shrs:temp Portal_Maker.Name
