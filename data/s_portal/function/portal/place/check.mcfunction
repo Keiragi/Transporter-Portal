@@ -1,3 +1,3 @@
 ## すでに1つあるか確認
 
-$execute store result storage shrs: S_Portal_Maker.Number byte 1 if entity @e[type=interaction,tag=S_Portal_Maker,tag=$(Name)]
+$execute store result storage shrs: Portal_Maker.Number byte 1 if entity @e[type=interaction,tag=S_Portal_Maker,tag=$(Name)]
