@@ -1,10 +1,7 @@
 ## 移動可能か判定し、可能なら処理開始
 
 # 移動可否の判別
-  execute store result storage minecraft: S_Portal_Maker.Info.Enable byte 1 run function s_portal:portal/touch/check_air
-
-# 無理ならエラーを返す
-  execute if data storage minecraft: S_Portal_Maker.Info{Enable:0b} as @a[limit=1,tag=S_Portal.Processing] run return run function s_portal:portal/error/cannot_tp
+  execute unless function s_portal:portal/touch/check_air run return run function s_portal:portal/error/cannot_tp
 
 # 移動処理
   tp @a[limit=1,tag=S_Portal.Processing] ~ ~1.25 ~

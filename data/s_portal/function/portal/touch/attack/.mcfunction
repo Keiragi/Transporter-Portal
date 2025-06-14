@@ -5,8 +5,8 @@
   $execute if entity @s[tag=S_Portal.Connected] as @e[limit=1,type=interaction,tag=S_Portal_Maker,tag=$(Name),nbt=!{attack:{}}] at @s run function s_portal:portal/touch/attack/dimension
 
 # 転移先が埋まっていないか確認
-  $execute at @e[limit=1,type=interaction,tag=S_Portal_Maker,tag=$(Name),nbt=!{attack:{}}] store result storage minecraft: S_Portal_Maker.Info.Enable byte 1 run function s_portal:portal/touch/check_air
-  execute if data storage minecraft: S_Portal_Maker.Info{Enable:0b} run data modify storage minecraft: S_Portal_Maker.Info merge value {state:"Block",color:"dark_red"}
+  $execute at @e[limit=1,type=interaction,tag=S_Portal_Maker,tag=$(Name),nbt=!{attack:{}}] unless function s_portal:portal/touch/check_air run \
+  data modify storage minecraft: S_Portal_Maker.Info merge value {state:"Block",color:"dark_red"}
 
 # 出力
   function s_portal:portal/touch/attack/message with storage minecraft: S_Portal_Maker.Info
