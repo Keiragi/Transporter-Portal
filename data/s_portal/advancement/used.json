@@ -1,11 +1,15 @@
 {
   "criteria": {
-    "weapon": {
+    "use": {
       "trigger": "consume_item",
       "conditions": {
         "item": {
-          "predicates": {
-            "custom_data": "{\"S_Item\":1b}"
+          "components": {
+            "custom_data": {
+              "S.Data": {
+                "ItemID": "Portal_Maker"
+              }
+            }
           }
         }
       }

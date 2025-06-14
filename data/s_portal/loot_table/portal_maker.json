@@ -50,7 +50,9 @@
           "components": {
             "max_stack_size": 1,
             "custom_data": {
-              "S_Item": true
+              "S.Data": {
+                "ItemID": "Portal_Maker"
+              }
             },
             "tooltip_display": {
               "hidden_components": [
@@ -71,7 +73,7 @@
               "id": "quartz",
               "count": 1,
               "components": {
-                "custom_data": "{\"Used\":1b,\"Loottable\":\"s_portal:portal_maker\"}",
+                "custom_data": "{\"S.Data\":{\"ItemID\":\"Portal_Maker\"},\"Used\":1b,\"Loottable\":\"s_portal:portal_maker\"}",
                 "enchantments": {
                   "s_portal:remainder": 1
                 },
