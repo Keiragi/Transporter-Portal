@@ -1,8 +1,8 @@
 ## loadしたときの処理
 
-title @a actionbar "Reloaded"
+# 死んだときのチャンクローダーを保護
+  gamerule enderPearlsVanishOnDeath false
 
-gamerule enderPearlsVanishOnDeath false
-
-scoreboard objectives add S_Portal.Measure dummy
-scoreboard objectives add S_Portal.PortalCooldown minecraft.custom:minecraft.play_time
+# 初期設定
+  scoreboard objectives add S_Portal.Measure dummy
+  scoreboard objectives add S_Portal.PortalCooldown minecraft.custom:minecraft.play_time
