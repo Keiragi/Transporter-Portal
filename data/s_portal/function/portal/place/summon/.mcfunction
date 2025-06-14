@@ -1,7 +1,7 @@
 #> s_portal:portal/place/summon/
 
 # 設置演出
-  playsound entity.blaze.hurt player @a["distance"=..16] ~ ~ ~ 0.5 2 1
+  playsound entity.blaze.hurt player @a[distance=..16] ~ ~ ~ 0.5 2 1
 
 # 主要
   execute positioned ~ ~-0.5 ~ summon block_display run function s_portal:portal/place/summon/block
@@ -13,4 +13,4 @@
   ride @e[type=ender_pearl,limit=1,tag=S_Portal.init] mount @e[type=block_display,limit=1,tag=S_Portal.init]
 
 # initとNameを置き換え
-  execute as @e["tag"=S_Portal.init] run data modify entity @s Tags[1] set from storage minecraft: "S_Portal_Maker"."Name"
+  execute as @e[tag=S_Portal.init] run data modify entity @s Tags[1] set from storage minecraft: S_Portal_Maker.Name
