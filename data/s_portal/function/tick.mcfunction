@@ -6,7 +6,7 @@
   execute at @e[type=interaction,tag=S_Portal_Maker,tag=S_Portal.Connected] positioned ~ ~1 ~ run particle cloud ~ ~1.0 ~ 0.3 0.5 0.3 0 1 force @a[distance=1..]
   execute at @e[type=interaction,tag=S_Portal_Maker,tag=S_Portal.Connected] positioned ~ ~1 ~ run particle cloud ~ ~0.5 ~ 0.3 0.1 0.3 0 1 normal @a[distance=..1]
 
-# 誤撤去を防止
+# 誤除去を防止
   scoreboard players remove @e[type=interaction,tag=S_Portal_Maker,scores={S_Portal.PortalCooldown=1..}] S_Portal.PortalCooldown 1
 
 # スニーク時 下にいるinteractionの場所で実行

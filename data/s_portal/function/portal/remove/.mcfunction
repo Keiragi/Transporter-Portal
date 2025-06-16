@@ -1,4 +1,4 @@
-## 撤去通知
+## 除去通知
 
 # 自分にだけ
   $execute as $(Name) at @s run function s_portal:portal/remove/player
