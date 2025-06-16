@@ -11,3 +11,4 @@
   execute unless data storage shrs:context Portal_Maker.option.only_overworld run data modify storage shrs:context Portal_Maker.option.only_overworld set value 0b
   execute unless data storage shrs:context Portal_Maker.option.remove_attack run data modify storage shrs:context Portal_Maker.option.remove_attack set value 0b
   execute unless data storage shrs:context Portal_Maker.option.place_underwater run data modify storage shrs:context Portal_Maker.option.place_underwater set value 1b
+  execute unless data storage shrs:context Portal_Maker.option.tp_particle run data modify storage shrs:context Portal_Maker.option.tp_particle set value 1b
