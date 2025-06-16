@@ -6,3 +6,6 @@
 # 初期設定
   scoreboard objectives add S_Portal.Measure dummy
   scoreboard objectives add S_Portal.PortalCooldown minecraft.custom:minecraft.play_time
+
+# 設定が無ければ作成
+  execute unless data storage shrs:context Portal_Maker.option.only_overworld run data modify storage shrs:context Portal_Maker.option.only_overworld set value 0b
