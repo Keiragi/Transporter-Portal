@@ -67,7 +67,7 @@
             },
             "use_cooldown": {
               "seconds": 1,
-              "cooldown_group": "s_item"
+              "cooldown_group": "s.portal_maker"
             },
             "use_remainder": {
               "id": "quartz",
