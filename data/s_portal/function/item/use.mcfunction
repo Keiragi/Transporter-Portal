@@ -5,7 +5,7 @@
   #title @s actionbar ""
 
 # only_overworldの設定確認
-  execute if data storage shrs:context Portal_Maker{only_overworld:1b} run return run function s_portal:portal/error/limit_dimension
+  execute if data storage shrs:context Portal_Maker.option{only_overworld:1b} unless dimension minecraft:overworld run return run function s_portal:portal/error/limit_dimension
 
 # ブロック操作範囲をそのまま距離に反映
   execute store result score @s S_Portal.Measure run attribute @s block_interaction_range get 10
